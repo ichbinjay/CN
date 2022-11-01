@@ -48,7 +48,7 @@ def ip_sanitizer(internet_protocol):
 
 def __main__():
     print("Hello User!")
-    print("Welcome to Jay's DNS Server 😁")
+    print("Welcome to Jay's DNS Server :D")
     tree = Trie()
     while True:
         print("1. Insert 2. Search 3. Exit and allow client to connect")
