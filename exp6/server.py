@@ -1,5 +1,5 @@
 import socket
-from time import time, sleep
+from time import sleep
 import _thread
 
 ip = "127.0.0.1"
@@ -10,7 +10,7 @@ message = ""
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.bind((ip, port))
-server.listen(2)
+server.listen(1)
 print("Server started...", end="")
 client, address = server.accept()
 print(f"Connected to {address}")
@@ -25,6 +25,7 @@ def server():
         flag = True
         reply = client.recv(1024).decode("utf-8")
         if reply == "ack":
+            print("Acknowledge received")
             flag = False
 
 
@@ -38,4 +39,3 @@ def check(timer):
 
 _thread.start_new_thread(check, (5,))
 server()
-

@@ -9,5 +9,4 @@ server.connect((ip, port))
 while True:
     message = server.recv(1024).decode("utf-8")
     print(f"Server: {message}")
-    sleep(7)
     server.send("ack".encode("utf-8"))
