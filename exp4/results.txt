@@ -1,0 +1,5 @@
+throughput for 100 mb is 2629.8021544914027 kilobits/sec
+
+throughput for 15 mb is 256513.26659687914 kilobits/sec
+throughput for 5 mb is 241532.24227486842 kilobits/sec
+throughput for 1 mb is 242294.75903701456 kilobits/sec

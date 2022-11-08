@@ -12,7 +12,8 @@ client, address = server.accept()
 print(f"Connected to {address}")
 
 print("sending file...")
-fp = open("m1.png", "rb")
+
+fp = open("1.jpg", "rb")
 
 data = fp.read(1024)
 while data:
@@ -23,6 +24,7 @@ while data:
         break
 
 print("done..")
+fp.close()
+
 server.close()
 client.close()
-fp.close()
